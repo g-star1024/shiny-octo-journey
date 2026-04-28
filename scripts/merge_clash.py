@@ -2,7 +2,9 @@
 import requests
 import yaml
 import sys
-from collections import OrderedDict
+import socket
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import copy
 
 # 所有订阅源 URL
 URLS = [
@@ -16,6 +18,14 @@ URLS = [
     "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.yaml",
     "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/v2rayshare.yaml",
     "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd02/cla02-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd01/cla01-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd03/cla03-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd04/cla04-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd05/cla05-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd06/cla06-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd07/cla07-1010.yaml",
+    "https://gcore.jsdelivr.net/gh/qmqv/jd08/cla08-1010.yaml",
     "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fsub.proxygo.org%2Fv2ray.php%3Fkey%3D0b90e69dfee5c4022fc4ccda739402e5&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&expand=true&sort=false&new_name=true",
     "https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fproxy.v2gh.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FPawdroid%2FFree-servers%2Fmain%2Fsub&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&expand=true&sort=false&new_name=true",
     "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdl.itworker.cc.cd%2Fitworker%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
@@ -24,6 +34,10 @@ URLS = [
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 }
+
+# 测试参数
+TCP_TIMEOUT = 3           # 连接超时秒数
+MAX_WORKERS = 20          # 并发测试线程数
 
 def download_yaml(url):
     """下载并解析 YAML，返回 parsed dict，失败返回 None"""
@@ -53,11 +67,55 @@ def merge_proxies(all_proxies):
             merged.append(proxy)
     return merged
 
+def check_proxy(proxy):
+    """
+    测试一个代理节点的 TCP 连通性。
+    返回 (proxy, is_alive)
+    """
+    name = proxy.get('name', 'unknown')
+    server = proxy.get('server')
+    port = proxy.get('port')
+    if not server or not port:
+        print(f"Skipping {name}: missing server or port", file=sys.stderr)
+        return proxy, False
+
+    try:
+        # 尝试 TCP 连接
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(TCP_TIMEOUT)
+        # 解析域名并连接
+        sock.connect((server, port))
+        sock.close()
+        # print(f"Alive: {name} ({server}:{port})")
+        return proxy, True
+    except Exception as e:
+        print(f"Timeout/Dead: {name} ({server}:{port}) - {type(e).__name__}", file=sys.stderr)
+        return proxy, False
+
+def filter_alive_proxies(proxies):
+    """
+    并发测试所有节点，只返回可连接的节点列表
+    """
+    if not proxies:
+        return []
+    alive = []
+    total = len(proxies)
+    print(f"Testing {total} proxies with {MAX_WORKERS} workers (timeout={TCP_TIMEOUT}s)...")
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_proxy = {executor.submit(check_proxy, proxy): proxy for proxy in proxies}
+        for i, future in enumerate(as_completed(future_to_proxy), 1):
+            proxy, is_alive = future.result()
+            if is_alive:
+                alive.append(proxy)
+            # 每测试 10 个打印一次进度
+            if i % 10 == 0 or i == total:
+                print(f"Progress: {i}/{total} tested, {len(alive)} alive so far")
+    print(f"Filtered: {len(alive)} alive out of {total} total nodes")
+    return alive
+
 def find_target_group(config):
     """
     找到应该被转换为 url-test 的代理组。
-    优先选择 type='select' 且名称常见于出口组（PROXY, ALL, GLOBAL, 选择 等）。
-    如果没有则选择第一个 select 组，再没有则选择第一个代理组。
     返回 (group_index, group_name)
     """
     proxy_groups = config.get('proxy-groups', [])
@@ -65,22 +123,19 @@ def find_target_group(config):
         return None, None
 
     common_names = ['PROXY', 'ALL', 'GLOBAL', '选择', '节点选择', 'Proxy', 'global', 'proxy']
-    # 优先按名称匹配
     for idx, group in enumerate(proxy_groups):
         if group.get('type') == 'select' and group.get('name') in common_names:
             return idx, group.get('name')
-    # 其次找第一个 select 组
     for idx, group in enumerate(proxy_groups):
         if group.get('type') == 'select':
             return idx, group.get('name')
-    # 最后只能拿第一个组
     return 0, proxy_groups[0].get('name')
 
 def main():
     all_proxies = []
     base_config = None
 
-    # 1. 下载所有配置，收集 proxies
+    # 1. 下载所有配置，收集所有 proxies
     for url in URLS:
         print(f"Processing {url}")
         config = download_yaml(url)
@@ -89,7 +144,6 @@ def main():
         proxies = config.get('proxies')
         if proxies and isinstance(proxies, list):
             all_proxies.extend(proxies)
-        # 选择第一个包含 proxy-groups 和 rules 的配置作为基础模板
         if base_config is None and config.get('proxy-groups') and config.get('rules'):
             base_config = config
             print(f"Using base config from {url}")
@@ -100,34 +154,33 @@ def main():
 
     # 去重
     all_proxies = merge_proxies(all_proxies)
-    print(f"Total unique proxies: {len(all_proxies)}")
+    print(f"Total unique proxies before filtering: {len(all_proxies)}")
 
-    # 2. 构建最终配置
+    # 2. 过滤掉 timeout 的节点（TCP 连通性测试）
+    alive_proxies = filter_alive_proxies(all_proxies)
+
+    if not alive_proxies:
+        print("No alive proxies remaining, exiting", file=sys.stderr)
+        sys.exit(1)
+
+    # 3. 构建最终配置（使用可用节点）
     if base_config:
-        import copy
         final_config = copy.deepcopy(base_config)
-        # 替换 proxies
-        final_config['proxies'] = all_proxies
+        final_config['proxies'] = alive_proxies
 
-        # 找到目标组并转换为 url-test
         target_idx, target_name = find_target_group(final_config)
         if target_idx is not None:
             target_group = final_config['proxy-groups'][target_idx]
-            # 保留原有组的部分字段（如 name, 其他属性），但修改 type 为 url-test
-            # 添加 url-test 必需的字段
             target_group['type'] = 'url-test'
-            target_group['url'] = 'http://www.gstatic.com/generate_204'  # 测速 URL
-            target_group['interval'] = 300  # 测试间隔（秒）
-            target_group['tolerance'] = 50  # 延迟容差（ms），50以内认为一样快
-            # 将 proxies 列表设置为所有节点名
-            proxy_names = [p['name'] for p in all_proxies]
+            target_group['url'] = 'http://www.gstatic.com/generate_204'
+            target_group['interval'] = 300
+            target_group['tolerance'] = 50
+            proxy_names = [p['name'] for p in alive_proxies]
             target_group['proxies'] = proxy_names
-            # 移除可能冲突的字段（如旧的 proxies 已经在上面被覆盖）
             print(f"Converted group '{target_name}' to url-test with {len(proxy_names)} proxies")
         else:
             print("No suitable proxy group found, creating a new url-test group", file=sys.stderr)
-            # 如果没有找到任何组，则添加一个 url-test 组
-            proxy_names = [p['name'] for p in all_proxies]
+            proxy_names = [p['name'] for p in alive_proxies]
             auto_group = {
                 "name": "AUTO",
                 "type": "url-test",
@@ -137,7 +190,6 @@ def main():
                 "proxies": proxy_names
             }
             final_config.setdefault('proxy-groups', []).append(auto_group)
-            # 同时修改 rules 中最后的 MATCH 指向这个新组
             rules = final_config.get('rules', [])
             modified = False
             for i, rule in enumerate(rules):
@@ -148,9 +200,9 @@ def main():
             if not modified:
                 rules.append("MATCH,AUTO")
     else:
-        # 没有基础配置，创建默认配置并加入 url-test
+        # 无基础配置，创建默认
         print("No base config found, creating default config with url-test", file=sys.stderr)
-        proxy_names = [p['name'] for p in all_proxies]
+        proxy_names = [p['name'] for p in alive_proxies]
         final_config = {
             "port": 7890,
             "socks-port": 7891,
@@ -158,7 +210,7 @@ def main():
             "mode": "rule",
             "log-level": "info",
             "external-controller": "0.0.0.0:9090",
-            "proxies": all_proxies,
+            "proxies": alive_proxies,
             "proxy-groups": [
                 {
                     "name": "AUTO",
@@ -172,7 +224,7 @@ def main():
             "rules": ["MATCH,AUTO"]
         }
 
-    # 3. 写入文件
+    # 4. 写入文件
     import os
     os.makedirs("clash", exist_ok=True)
     with open("clash/merged.yaml", "w", encoding="utf-8") as f:
