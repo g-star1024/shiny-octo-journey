@@ -2,8 +2,8 @@ name: Daily Merge Clash Nodes
 
 on:
   schedule:
-    # 每天 UTC 0:00 运行（北京时间 8:00）
-    - cron: '0 0 * * *'
+    # 每 4 小时运行一次（UTC 时间：0,4,8,12,16,20 → 北京时间 8,12,16,20,0,4）
+    - cron: '0 */4 * * *'
   workflow_dispatch:   # 允许手动触发
 
 permissions:
