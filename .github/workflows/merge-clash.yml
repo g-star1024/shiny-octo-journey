@@ -1,36 +1,49 @@
-name: Daily Merge Clash Nodes
+name: Daily Node Merge
+
+# 授予修改仓库内容的权限
+permissions:
+  contents: write
 
 on:
+  # 1. 定时任务：每天 UTC 时间 00:00 运行 (北京时间早上 8 点)
   schedule:
-    # 每 4 小时运行一次（UTC 时间：0,4,8,12,16,20 → 北京时间 8,12,16,20,0,4）
-    - cron: '0 */4 * * *'
-  workflow_dispatch:   # 允许手动触发
-
-permissions:
-  contents: write       # 允许推送代码到仓库
+    - cron: '0 0 * * *'
+  # 2. 手动触发：可以在 GitHub 网页上点击运行
+  workflow_dispatch:
 
 jobs:
-  merge:
+  merge-nodes:
     runs-on: ubuntu-latest
+
     steps:
+      # 步骤 1: 拉取仓库代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      # 步骤 2: 设置 Python 环境
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
+          # 开启 pip 缓存以加速依赖安装
+          cache: 'pip'
 
+      # 步骤 3: 安装 Python 依赖
       - name: Install dependencies
-        run: pip install pyyaml requests
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      # 步骤 4: 运行节点合并脚本
       - name: Run merge script
         run: python scripts/merge_clash.py
 
-      - name: Commit and push if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add clash/merged.yaml
-          git diff --staged --quiet || git commit -m "chore: auto-update merged clash config [skip ci]"
-          git push
+      # 步骤 5: 提交并推送更新后的文件
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-update clash config"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          file_pattern: "clash/merged.yaml"
