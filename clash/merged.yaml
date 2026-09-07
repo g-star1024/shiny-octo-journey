@@ -24,25 +24,8 @@ dns:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-- name: 🇭🇰 移动-HKG-443-xhttp-03
-  server: 104.17.210.199
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇫🇷 电信-FRA-443-Trojan-WS-TLS-02
-  server: 104.26.11.233
+- name: 电信-LAX-443-Trojan-WS-TLS-01
+  server: 104.19.40.239
   port: 443
   type: trojan
   password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -56,8 +39,53 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 联通-LAX-443-xhttp-02
-  server: 104.19.145.65
+- name: 🇺🇸US_28|⬇️3.5MB/s
+  network: ws
+  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+  port: 443
+  server: 104.21.14.54
+  skip-cert-verify: true
+  sni: 6666YHjU.777159.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /dilyfCPEmLvYr5hYXD
+- name: 🇭🇰 移动-HKG-443-WS-TLS-03
+  server: 104.17.171.32
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇭🇰 移动-HKG-443-WS-TLS-02
+  server: 104.17.160.193
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 联通-LAX-443-xhttp-03
+  server: 104.19.46.63
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -73,8 +101,243 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
+- name: 🇫🇷FR_7|⬇️3.3MB/s
+  network: ws
+  port: 443
+  server: 194.76.18.25
+  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+    path: /ws
 - name: 🇭🇰 移动-HKG-443-xhttp-02
-  server: 104.21.86.234
+  server: 104.17.160.193
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 未知VLESS-72|free-nodes
+  network: ws
+  port: 443
+  server: 194.76.18.25
+  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+    path: /ws
+- name: cfip.1323123.xyz-443-xhttp
+  server: cfip.1323123.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 联通-LAX-443-Trojan-WS-TLS-01
+  server: 104.18.8.195
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 美国(yudou789.top 玉豆免费节点)_80
+  network: ws
+  port: 8880
+  server: 91.206.71.50
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime15.workers.dev
+    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: 电信-LAX-443-xhttp-02
+  server: 104.19.40.206
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-01
+  server: 104.17.60.96
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 电信-LAX-443-WS-TLS-01
+  server: 104.19.40.239
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 未知VLESS-65|free-nodes
+  network: ws
+  port: 80
+  server: nodejs.org
+  servername: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5eb9b54d-3c4e-4588-97f7-e53fe3e92c90
+  ws-opts:
+    headers:
+      host: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
+    path: /?ed
+- name: xn--b6gac.eu.org-443-Trojan-WS-TLS
+  server: xn--b6gac.eu.org
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 美国(yudou789.top 玉豆免费节点)_16
+  network: ws
+  port: 8880
+  server: 94.140.0.40
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: 🇮🇹IT_3|⬇️3.7MB/s
+  network: ws
+  port: 443
+  server: 194.76.18.25
+  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+    path: /ws
+- name: 🇺🇸_US_美国_4
+  network: ws
+  port: 443
+  server: 104.17.101.139
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?proxyip=ip.111000.de5.net%3A443
+- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-04
+  server: 104.19.149.34
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- client-fingerprint: chrome
+  name: 🇺🇸_US_美国_3
+  network: ws
+  port: 2096
+  server: 167.68.42.191
+  servername: sni.my111000.tech
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.my111000.tech
+    path: /
+- name: xn--b6gac.eu.org-443-xhttp
+  server: xn--b6gac.eu.org
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -104,21 +367,8 @@ proxies:
     headers:
       host: rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg
     path: /ws
-- name: 美国(yudou789.top 玉豆免费节点)_79
-  network: ws
-  port: 2087
-  server: 162.159.44.100
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-    path: /?ed=2560
-- name: 🇫🇷 电信-FRA-443-xhttp-02
-  server: 104.26.11.233
+- name: 联通-LAX-443-xhttp-04
+  server: 172.67.243.124
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -134,38 +384,8 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
-- name: 🇭🇰 移动-HKG-443-WS-TLS-05
-  server: 104.19.145.65
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_5
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 电信-LAX-443-Trojan-WS-TLS-03
-  server: 104.17.140.98
+- name: 联通-LAX-443-Trojan-WS-TLS-02
+  server: 104.17.164.107
   port: 443
   type: trojan
   password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -179,57 +399,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-05
-  server: 104.19.145.65
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇭🇰 移动-HKG-443-xhttp-04
-  server: 104.21.92.157
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 电信-LAX-443-xhttp-01
-  server: 104.17.148.206
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 电信-LAX-443-WS-TLS-02
-  server: 104.17.148.80
+- name: 联通-LAX-443-WS-TLS-05
+  server: 104.19.116.101
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -245,21 +416,24 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: GBVLESS-84|free-nodes
-  network: ws
+- name: 电信-LAX-443-WS-TLS-04
+  server: 104.17.171.32
   port: 443
-  server: transferwise.com
-  servername: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
   type: vless
-  udp: true
-  uuid: 979b6822-d65a-400d-89f8-30391903ac20
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
   ws-opts:
+    path: /?ed=2048
     headers:
-      host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
-    path: /ws
-- name: FRVLESS-75|free-nodes
+      Host: dl.itworker.cc.cd
+- name: 🇫🇷FR_8|⬇️5.1MB/s
   network: ws
   port: 443
   server: 69.84.182.20
@@ -273,22 +447,80 @@ proxies:
     headers:
       host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
     path: /ws
-- name: 🇮🇹IT_2|⬇️4.9MB/s
-  network: ws
+- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-02
+  server: 104.17.160.193
   port: 443
-  server: 198.41.199.83
-  servername: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
-  skip-cert-verify: true
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 联通-LAX-443-WS-TLS-04
+  server: 172.67.243.124
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇺🇸_US_美国_5
+  network: ws
+  port: 2096
+  server: 8.34.146.191
+  servername: sni.my111000.tech
   tls: true
   type: vless
   udp: true
-  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
-    path: /ws
-- name: 联通-LAX-443-xhttp-03
-  server: 104.16.247.28
+      Host: sni.my111000.tech
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+- name: 联通-LAX-443-Trojan-WS-TLS-05
+  server: 104.19.116.101
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: 172.64.147.255
+  tls: false
+  type: vless
+  udp: true
+  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+  ws-opts:
+    headers:
+      Host: tt.andishehparenting.com
+    path: /
+- name: 🇭🇰 移动-HKG-443-xhttp-01
+  server: 104.17.60.96
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -304,6 +536,19 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
+- name: 美国(yudou789.top 玉豆免费节点)_12
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed
 - name: 🇫🇷FR_3|⬇️6.2MB/s
   network: ws
   port: 443
@@ -318,47 +563,173 @@ proxies:
     headers:
       host: fr-1-fr-1.aiopen.sbs
     path: /kbjc/fr1
-- name: 美国(yudou789.top 玉豆免费节点)_16
+- name: 🇺🇸_US_美国_2
   network: ws
-  port: 8880
-  server: 94.140.0.40
-  tls: false
+  port: 8443
+  server: 104.20.6.134
+  servername: sni.111000.dynv6.net
+  tls: true
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: vms.lifetime26.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 联通-LAX-443-WS-TLS-01
-  server: 104.17.200.165
+      Host: sni.111000.dynv6.net
+    path: /?Telegram @v2rayngzendegimamad
+- name: cf.090227.xyz-443-xhttp
+  server: cf.090227.xyz
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
   tls: true
   alpn:
-  - h3
+  - h3%2Ch2
   tfo: false
   skip-cert-verify: false
   servername: dl.itworker.cc.cd
   client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 联通-LAX-443-xhttp-05
+  server: 104.19.116.101
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 美国_5
+  network: ws
+  port: 443
+  server: 104.21.9.137
+  servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
+  ws-opts:
+    headers:
+      host: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+    path: /0SCvfqSaeeB74kgXZ
+- name: FRVLESS-75|free-nodes
+  network: ws
+  port: 443
+  server: 69.84.182.20
+  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+    path: /ws
+- name: 🇩🇪DE_6|⬇️4.3MB/s
+  network: ws
+  port: 2053
+  server: 172.64.152.23
+  servername: hz.badomzamini.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8a2240da-25ca-4c95-9c55-26ef2ab70bab
+  ws-opts:
+    headers:
+      host: hz.badomzamini.uk
+    path: /latest?ed=2560
+- name: 🇸🇬SG_4|⬇️5.1MB/s
+  network: ws
+  password: a9570330-769d-11ef-90dc-1577c1651679
+  port: 443
+  server: 104.18.1.196
+  skip-cert-verify: true
+  sni: sg-trojan.andfree.my.id
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /welcome
+- name: cloudflare.182682.xyz-443-Trojan-WS-TLS
+  server: cloudflare.182682.xyz
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_61
+- name: 美国(yudou789.top 玉豆免费节点)_52
   network: ws
   port: 8880
-  server: 188.164.248.30
+  server: 109.176.239.50
   tls: false
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: vms.lifetime26.workers.dev
+      Host: vms.lifetime03.workers.dev
     path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: 美国(yudou789.top 玉豆免费节点)_50
+  network: ws
+  port: 8880
+  server: 192.200.160.50
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime43.workers.dev
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- name: 🇫🇷FR_1|⬇️4.3MB/s
+  network: ws
+  port: 443
+  server: 104.24.69.114
+  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+    path: /ws
+- name: 🇮🇹IT_1|⬇️2.9MB/s
+  network: ws
+  port: 443
+  server: 208.103.161.110
+  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
+    path: /ws
 - name: 🇩🇪DE_13|⬇️5.6MB/s
   network: ws
   port: 443
@@ -373,8 +744,8 @@ proxies:
     headers:
       host: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
     path: /ws
-- name: 电信-LAX-443-xhttp-03
-  server: 104.17.140.98
+- name: 电信-LAX-443-xhttp-04
+  server: 104.17.171.32
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -390,56 +761,23 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
-- name: 🇭🇰 移动-HKG-443-WS-TLS-02
-  server: 104.21.86.234
+- name: 电信-LAX-443-Trojan-WS-TLS-03
+  server: 104.17.22.112
   port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
   alpn:
   - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 未知VLESS-72|free-nodes
-  network: ws
-  port: 443
-  server: 194.76.18.25
-  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
-  ws-opts:
-    headers:
-      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-    path: /ws
-- name: 🇭🇰 移动-HKG-443-WS-TLS-04
-  server: 104.21.92.157
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
   skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
 - name: 联通-LAX-443-xhttp-01
-  server: 104.17.200.165
+  server: 104.18.8.195
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -455,8 +793,8 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
-- name: 联通-LAX-443-Trojan-WS-TLS-05
-  server: 104.24.95.171
+- name: 电信-LAX-443-Trojan-WS-TLS-02
+  server: 104.19.40.206
   port: 443
   type: trojan
   password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -470,38 +808,25 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 联通-LAX-443-WS-TLS-03
-  server: 104.16.247.28
+- name: 电信-LAX-443-xhttp-03
+  server: 104.17.22.112
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
   tls: true
   alpn:
-  - h3
+  - h3%2Ch2
   tfo: false
   skip-cert-verify: false
   servername: dl.itworker.cc.cd
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_8
-  network: ws
-  port: 2053
-  server: 162.159.45.175
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-    path: /?ed=2560
-- name: 联通-LAX-443-Trojan-WS-TLS-01
-  server: 104.17.200.165
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: cdn.tzpro.xyz-443-Trojan-WS-TLS
+  server: cdn.tzpro.xyz
   port: 443
   type: trojan
   password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -515,50 +840,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 未知VLESS-65|free-nodes
-  network: ws
-  port: 80
-  server: nodejs.org
-  servername: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5eb9b54d-3c4e-4588-97f7-e53fe3e92c90
-  ws-opts:
-    headers:
-      host: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
-    path: /?ed
-- name: 🇸🇬SG_4|⬇️5.1MB/s
-  network: ws
-  password: a9570330-769d-11ef-90dc-1577c1651679
-  port: 443
-  server: 104.18.1.196
-  skip-cert-verify: true
-  sni: sg-trojan.andfree.my.id
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /welcome
-- name: 🇭🇰 移动-HKG-443-WS-TLS-01
-  server: 104.19.57.57
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 联通-LAX-443-WS-TLS-02
-  server: 104.19.145.65
+- name: 🇭🇰 移动-HKG-443-WS-TLS-04
+  server: 104.19.149.34
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -588,23 +871,25 @@ proxies:
     headers:
       host: ir7.hnbyme.online
     path: /
-- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-04
-  server: 104.21.92.157
+- name: 🇭🇰 移动-HKG-443-WS-TLS-01
+  server: 104.17.60.96
   port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
   alpn:
   - h3
-  client-fingerprint: chrome
+  tfo: false
   skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 🇫🇷 电信-FRA-443-xhttp-01
-  server: 104.26.11.203
+- name: 🇭🇰 移动-HKG-443-xhttp-03
+  server: 104.17.171.32
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -620,305 +905,24 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
-- name: 🇺🇸_US_美国_2
-  network: ws
-  port: 8443
-  server: 104.20.6.134
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: /?Telegram @v2rayngzendegimamad
-- name: cdn.tzpro.xyz-443-Trojan-WS-TLS
-  server: cdn.tzpro.xyz
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇫🇷FR_8|⬇️5.1MB/s
+- name: GBVLESS-84|free-nodes
   network: ws
   port: 443
-  server: 69.84.182.20
-  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  server: transferwise.com
+  servername: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  uuid: 979b6822-d65a-400d-89f8-30391903ac20
   ws-opts:
     headers:
-      host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+      host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
     path: /ws
-- name: 美国(yudou789.top 玉豆免费节点)_52
-  network: ws
-  port: 8880
-  server: 109.176.239.50
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime03.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 电信-LAX-443-xhttp-02
-  server: 104.17.148.80
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 美国(yudou789.top 玉豆免费节点)_58
-  network: ws
-  port: 8880
-  server: 188.164.248.50
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime26.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 电信-LAX-443-WS-TLS-03
-  server: 104.17.140.98
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 联通-LAX-443-xhttp-05
-  server: 104.24.95.171
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 电信-LAX-443-Trojan-WS-TLS-01
-  server: 104.17.148.206
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇫🇷FR_1|⬇️4.3MB/s
+- name: 🇮🇹IT_2|⬇️4.9MB/s
   network: ws
   port: 443
-  server: 104.24.69.114
-  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
-  ws-opts:
-    headers:
-      host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-    path: /ws
-- name: 联通-LAX-443-Trojan-WS-TLS-02
-  server: 104.19.145.65
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇭🇰 移动-HKG-443-WS-TLS-03
-  server: 104.17.210.199
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇮🇹IT_1|⬇️2.9MB/s
-  network: ws
-  port: 443
-  server: 208.103.161.110
-  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
-  ws-opts:
-    headers:
-      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-    path: /ws
-- name: 🇺🇸US_28|⬇️3.5MB/s
-  network: ws
-  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
-  port: 443
-  server: 104.21.14.54
-  skip-cert-verify: true
-  sni: 6666YHjU.777159.xYz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /dilyfCPEmLvYr5hYXD
-- name: 🇫🇷FR_7|⬇️3.3MB/s
-  network: ws
-  port: 443
-  server: 194.76.18.25
-  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
-  ws-opts:
-    headers:
-      host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
-    path: /ws
-- name: 🇫🇷 电信-FRA-443-WS-TLS-02
-  server: 104.26.11.233
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 电信-LAX-443-WS-TLS-01
-  server: 104.17.148.206
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cloudflare.182682.xyz-443-xhttp
-  server: cloudflare.182682.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇮🇹IT_3|⬇️3.7MB/s
-  network: ws
-  port: 443
-  server: 194.76.18.25
-  servername: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
-  ws-opts:
-    headers:
-      host: rAyAn-cOnFiG-it-1.pArSa.dPdNs.oRg
-    path: /ws
-- name: 美国(yudou789.top 玉豆免费节点)_78
-  network: ws
-  port: 443
-  server: 162.159.44.198
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-    path: /?ed=2560
-- name: https://t.me/zyzzzoao⚡️_1
-  network: ws
-  port: 443
-  server: 141.101.123.40
+  server: 198.41.199.83
   servername: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
   skip-cert-verify: true
   tls: true
@@ -929,81 +933,8 @@ proxies:
     headers:
       host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
     path: /ws
-- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-01
-  server: 104.19.57.57
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_55
-  network: ws
-  port: 2053
-  server: 162.159.44.66
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-    path: /?ed=2560
-- name: 美国_2
-  network: ws
-  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
-  port: 443
-  server: 104.21.14.54
-  skip-cert-verify: true
-  sni: 6666YHjU.777159.xYz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /dilyfCPEmLvYr5hYXD
-- name: xn--b6gac.eu.org-443-xhttp
-  server: xn--b6gac.eu.org
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇭🇰 移动-HKG-443-xhttp-01
-  server: 104.19.57.57
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇫🇷 电信-FRA-443-WS-TLS-01
-  server: 104.26.11.203
+- name: 联通-LAX-443-WS-TLS-02
+  server: 104.17.164.107
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -1019,391 +950,6 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- client-fingerprint: chrome
-  name: 🇺🇸_US_美国_3
-  network: ws
-  port: 2096
-  server: 167.68.42.191
-  servername: sni.my111000.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.my111000.tech
-    path: /
-- name: 联通-LAX-443-Trojan-WS-TLS-03
-  server: 104.16.247.28
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇺🇸_US_美国_5
-  network: ws
-  port: 2096
-  server: 8.34.146.191
-  servername: sni.my111000.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.my111000.tech
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-- name: 联通-LAX-443-Trojan-WS-TLS-04
-  server: 172.67.241.194
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇩🇪DE_6|⬇️4.3MB/s
-  network: ws
-  port: 2053
-  server: 172.64.152.23
-  servername: hz.badomzamini.uk
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8a2240da-25ca-4c95-9c55-26ef2ab70bab
-  ws-opts:
-    headers:
-      host: hz.badomzamini.uk
-    path: /latest?ed=2560
-- name: 🇭🇰 移动-HKG-443-xhttp-05
-  server: 104.19.145.65
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 美国(yudou789.top 玉豆免费节点)_80
-  network: ws
-  port: 8880
-  server: 91.206.71.50
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime15.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 美国(yudou789.top 玉豆免费节点)_4
-  network: ws
-  port: 2087
-  server: 162.159.39.157
-  servername: 1.proxy2.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
-  ws-opts:
-    headers:
-      Host: 1.proxy2.us.ci
-    path: /?ed=2560
-- name: 联通-LAX-443-WS-TLS-05
-  server: 104.24.95.171
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cdn.tzpro.xyz-443-xhttp
-  server: cdn.tzpro.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 电信-LAX-443-Trojan-WS-TLS-02
-  server: 104.17.148.80
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-02
-  server: 104.21.86.234
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: xn--b6gac.eu.org-443-Trojan-WS-TLS
-  server: xn--b6gac.eu.org
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cloudflare-ip.mofashi.ltd-443-xhttp
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 联通-LAX-443-WS-TLS-04
-  server: 172.67.241.194
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-03
-  server: 104.17.210.199
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cfip.1323123.xyz-443-xhttp
-  server: cfip.1323123.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇺🇸_US_美国_1
-  network: ws
-  port: 443
-  server: 45.40.154.139
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 联通-LAX-443-xhttp-04
-  server: 172.67.241.194
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: cf.0sm.com-443-Trojan-WS-TLS
-  server: cf.0sm.com
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_12
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed
-- name: cf.090227.xyz-443-xhttp
-  server: cf.090227.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇦🇹_AT_奥地利
-  network: ws
-  port: 2096
-  server: 212.183.88.238
-  servername: sni.jpmj.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
-- name: 未知VLESS-126|free-nodes
-  network: ws
-  port: 2052
-  server: nodejs.org
-  servername: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
-  ws-opts:
-    headers:
-      host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
-    path: /?ed
-- name: 美国_5
-  network: ws
-  port: 443
-  server: 104.21.9.137
-  servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
-  ws-opts:
-    headers:
-      host: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
-    path: /0SCvfqSaeeB74kgXZ
-- name: 🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: 172.64.147.255
-  tls: false
-  type: vless
-  udp: true
-  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-  ws-opts:
-    headers:
-      Host: tt.andishehparenting.com
-    path: /
 - name: cdn.2020111.xyz-443-Trojan-WS-TLS
   server: cdn.2020111.xyz
   port: 443
@@ -1419,137 +965,19 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_77
+- name: 美国_2
   network: ws
-  port: 8880
-  server: 188.164.248.40
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime26.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: cf.0sm.com-443-xhttp
-  server: cf.0sm.com
+  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
   port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: 🇫🇷 电信-FRA-443-Trojan-WS-TLS-01
-  server: 104.26.11.203
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美国(yudou789.top 玉豆免费节点)_50
-  network: ws
-  port: 8880
-  server: 192.200.160.50
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime43.workers.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: 美国(yudou789.top 玉豆免费节点)
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /
-- name: 🇺🇸US_7|1.4MB/s
-  network: ws
-  port: 443
-  server: 172.67.190.103
-  servername: 9-m16.chiAng-rAI2036.kDNS.Fr
+  server: 104.21.14.54
   skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
+  sni: 6666YHjU.777159.xYz
+  type: trojan
   udp: true
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   ws-opts:
-    headers:
-      Host: 9-m16.chiAng-rAI2036.kDNS.Fr
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: 🇺🇸_US_美国_4
-  network: ws
-  port: 443
-  server: 104.17.101.139
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: /?proxyip=ip.111000.de5.net%3A443
-- name: cf.877771.xyz-443-xhttp
-  server: cf.877771.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3%2Ch2
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /9898ffe4
-    host: dl.itworker.cc.cd
-    mode: stream-one
-- name: cnamefuckxxs.yuchen.icu-443-xhttp
-  server: cnamefuckxxs.yuchen.icu
+    path: /dilyfCPEmLvYr5hYXD
+- name: 🇭🇰 移动-HKG-443-xhttp-05
+  server: 104.17.63.240
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -1582,6 +1010,447 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
+- name: 美国(yudou789.top 玉豆免费节点)
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /
+- name: 美国(yudou789.top 玉豆免费节点)_58
+  network: ws
+  port: 8880
+  server: 188.164.248.50
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: 美国(yudou789.top 玉豆免费节点)_77
+  network: ws
+  port: 8880
+  server: 188.164.248.40
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: cf.877771.xyz-443-xhttp
+  server: cf.877771.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 美国(yudou789.top 玉豆免费节点)_5
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: cf.877771.xyz-443-Trojan-WS-TLS
+  server: cf.877771.xyz
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 电信-LAX-443-WS-TLS-03
+  server: 104.17.22.112
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 联通-LAX-443-xhttp-02
+  server: 104.17.164.107
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-05
+  server: 104.17.63.240
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 联通-LAX-443-Trojan-WS-TLS-04
+  server: 172.67.243.124
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇭🇰 移动-HKG-443-WS-TLS-05
+  server: 104.17.63.240
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: cf.0sm.com-443-xhttp
+  server: cf.0sm.com
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: cloudflare.182682.xyz-443-xhttp
+  server: cloudflare.182682.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 联通-LAX-443-WS-TLS-01
+  server: 104.18.8.195
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 美国(yudou789.top 玉豆免费节点)_61
+  network: ws
+  port: 8880
+  server: 188.164.248.30
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
+- name: 🇭🇰 移动-HKG-443-xhttp-04
+  server: 104.19.149.34
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: cf.0sm.com-443-Trojan-WS-TLS
+  server: cf.0sm.com
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 未知VLESS-126|free-nodes
+  network: ws
+  port: 2052
+  server: nodejs.org
+  servername: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
+  ws-opts:
+    headers:
+      host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
+    path: /?ed
+- name: https://t.me/zyzzzoao⚡️_1
+  network: ws
+  port: 443
+  server: 141.101.123.40
+  servername: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+  ws-opts:
+    headers:
+      host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
+    path: /ws
+- name: cnamefuckxxs.yuchen.icu-443-xhttp
+  server: cnamefuckxxs.yuchen.icu
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 电信-LAX-443-Trojan-WS-TLS-04
+  server: 104.17.171.32
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: cdn.tzpro.xyz-443-xhttp
+  server: cdn.tzpro.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: 联通-LAX-443-WS-TLS-03
+  server: 104.19.46.63
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇭🇰 移动-HKG-443-Trojan-WS-TLS-03
+  server: 104.17.171.32
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 电信-LAX-443-WS-TLS-02
+  server: 104.19.40.206
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇺🇸_US_美国_1
+  network: ws
+  port: 443
+  server: 45.40.154.139
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇦🇹_AT_奥地利
+  network: ws
+  port: 2096
+  server: 212.183.88.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+- name: 联通-LAX-443-Trojan-WS-TLS-03
+  server: 104.19.46.63
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 电信-LAX-443-xhttp-01
+  server: 104.19.40.239
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
 - name: 未知VLESS-119|free-nodes
   network: ws
   port: 2052
@@ -1596,8 +1465,90 @@ proxies:
     headers:
       host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
     path: /?ed
-- name: speed.marisalnc.com-443-Trojan-WS-TLS
-  server: speed.marisalnc.com
+- name: 美国(yudou789.top 玉豆免费节点)_8
+  network: ws
+  port: 2053
+  server: 162.159.45.175
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /?ed=2560
+- name: 美国(yudou789.top 玉豆免费节点)_4
+  network: ws
+  port: 2087
+  server: 162.159.39.157
+  servername: 1.proxy2.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  ws-opts:
+    headers:
+      Host: 1.proxy2.us.ci
+    path: /?ed=2560
+- name: 美国(yudou789.top 玉豆免费节点)_78
+  network: ws
+  port: 443
+  server: 162.159.44.198
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /?ed=2560
+- name: 美国(yudou789.top 玉豆免费节点)_79
+  network: ws
+  port: 2087
+  server: 162.159.44.100
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /?ed=2560
+- name: 美国(yudou789.top 玉豆免费节点)_55
+  network: ws
+  port: 2053
+  server: 162.159.44.66
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /?ed=2560
+- name: cfip.cfcdn.vip-443-xhttp
+  server: cfip.cfcdn.vip
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3%2Ch2
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
+- name: cfip.cfcdn.vip-443-Trojan-WS-TLS
+  server: cfip.cfcdn.vip
   port: 443
   type: trojan
   password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -1611,6 +1562,20 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
+- name: 美国_9
+  network: ws
+  port: 443
+  server: androidauthority.com
+  servername: fr-1.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f
+  ws-opts:
+    headers:
+      host: fr-1.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
 - name: speed.marisalnc.com-443-xhttp
   server: speed.marisalnc.com
   port: 443
@@ -1628,6 +1593,49 @@ proxies:
     path: /9898ffe4
     host: dl.itworker.cc.cd
     mode: stream-one
+- name: speed.marisalnc.com-443-Trojan-WS-TLS
+  server: speed.marisalnc.com
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: GBVLESS-110|free-nodes
+  network: ws
+  port: 80
+  server: fuck1.tawanaproxy.online
+  servername: en.tawana.cf.panbehpanel.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c33275fd-a4fa-470d-90e4-55da39d849a8
+  ws-opts:
+    headers:
+      host: en.tawana.cf.panbehpanel.ir
+    path: /
+- name: 美国_10
+  network: ws
+  port: 443
+  server: cdnjs.com
+  servername: ca-1.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0f65a4ee-ac15-4451-8b37-72230181c06c
+  ws-opts:
+    headers:
+      host: ca-1.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
 - name: cdn.tzpro.xyz-443-WS-TLS
   server: cdn.tzpro.xyz
   port: 443
@@ -1659,78 +1667,6 @@ proxies:
     headers:
       host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
     path: /ws
-- name: GBVLESS-110|free-nodes
-  network: ws
-  port: 80
-  server: fuck1.tawanaproxy.online
-  servername: en.tawana.cf.panbehpanel.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c33275fd-a4fa-470d-90e4-55da39d849a8
-  ws-opts:
-    headers:
-      host: en.tawana.cf.panbehpanel.ir
-    path: /
-- name: cf.090227.xyz-443-Trojan-WS-TLS
-  server: cf.090227.xyz
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 美國_4
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: speed.marisalnc.com-443-WS-TLS
-  server: speed.marisalnc.com
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cfip.cfcdn.vip-443-Trojan-WS-TLS
-  server: cfip.cfcdn.vip
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
 - name: 美国(yudou789.top 玉豆免费节点)_14
   password: humanity
   port: 443
@@ -1741,20 +1677,6 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: 美国_9
-  network: ws
-  port: 443
-  server: androidauthority.com
-  servername: fr-1.rAyAn-rVp.cLoUdNs.cLuB
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f
-  ws-opts:
-    headers:
-      host: fr-1.rAyAn-rVp.cLoUdNs.cLuB
-    path: /ws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0136
@@ -1785,11 +1707,216 @@ proxies:
   type: vless
   udp: true
   uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0137
+  network: tcp
+  port: 39399
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
 - alterId: 0
   cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_32
+  name: 英国(yudou789.top 玉豆免费节点)_1
   port: 180
   server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_29
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_44
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_54
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_23
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_68
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_53
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_64
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_44
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_29
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_48
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_21
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_36
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_40
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_35
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_9
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_55
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_26
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_15
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_52
+  port: 180
+  server: 82.198.246.250
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1807,7 +1934,37 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_7
+  name: 英国(yudou789.top 玉豆免费节点)_34
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_8
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_31
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_1
   port: 180
   server: 82.198.246.250
   skip-cert-verify: false
@@ -1827,7 +1984,207 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_31
+  name: 英国(yudou789.top 玉豆免费节点)_37
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_33
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_45
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_65
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_2
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_11
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_32
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_20
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_69
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_72
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_49
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_12
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_67
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_59
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_18
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_26
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_48
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_75
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_6
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_25
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_9
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -1857,7 +2214,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_41
+  name: 美国(yudou789.top 玉豆免费节点)_81
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -1867,49 +2224,9 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_29
+  name: 美国(yudou789.top 玉豆免费节点)_39
   port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_72
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_1
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_1
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_36
-  port: 180
-  server: 82.198.246.97
+  server: 82.198.246.233
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1918,166 +2235,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 英国(yudou789.top 玉豆免费节点)_51
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_53
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_18
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_55
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_46
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_22
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_33
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_65
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_38
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_49
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_17
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_76
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_5
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_9
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_27
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_21
-  port: 180
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_20
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2097,149 +2254,9 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_9
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_48
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_68
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_34
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_47
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_45
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_81
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_59
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
   name: 英国(yudou789.top 玉豆免费节点)_14
   port: 180
   server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_67
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_40
-  port: 180
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_56
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_11
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 美国(yudou789.top 玉豆免费节点)_25
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_4
-  port: 180
-  server: 82.198.246.250
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -2257,27 +2274,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_49
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_10
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_22
+  name: 英国(yudou789.top 玉豆免费节点)_10
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2297,6 +2294,136 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_11
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_41
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_34
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_47
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_22
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 美国(yudou789.top 玉豆免费节点)_25
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_5
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_10
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_76
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_27
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_7
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_47
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 法国(yudou789.top 玉豆免费节点)_1
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
   name: 美国(yudou789.top 玉豆免费节点)_63
   port: 180
   server: 82.198.246.97
@@ -2307,17 +2434,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_69
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_23
+  name: 德国(yudou789.top 玉豆免费节点)_4
   port: 180
   server: 82.198.246.250
   skip-cert-verify: false
@@ -2326,8 +2443,8 @@ proxies:
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_12
+  cipher: aes-128-gcm
+  name: 美国(yudou789.top 玉豆免费节点)_71
   port: 180
   server: 82.198.246.37
   skip-cert-verify: false
@@ -2337,7 +2454,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_54
+  name: 英国(yudou789.top 玉豆免费节点)_24
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2347,47 +2464,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 德国(yudou789.top 玉豆免费节点)_8
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_6
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_26
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_29
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_10
+  name: 美国(yudou789.top 玉豆免费节点)_46
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2407,7 +2484,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_70
+  name: 英国(yudou789.top 玉豆免费节点)_22
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2417,7 +2494,57 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_47
+  name: 英国(yudou789.top 玉豆免费节点)_13
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_38
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国(yudou789.top 玉豆免费节点)_5
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_17
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 英国(yudou789.top 玉豆免费节点)_56
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2437,7 +2564,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_24
+  name: 英国(yudou789.top 玉豆免费节点)_31
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2447,17 +2574,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_26
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_2
+  name: 美国(yudou789.top 玉豆免费节点)_70
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2487,27 +2604,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_52
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_25
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 法国(yudou789.top 玉豆免费节点)_1
+  name: 美国(yudou789.top 玉豆免费节点)_49
   port: 180
   server: 82.198.246.97
   skip-cert-verify: false
@@ -2515,126 +2612,28 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_48
-  port: 180
-  server: 82.198.246.97
+- name: cf.090227.xyz-443-Trojan-WS-TLS
+  server: cf.090227.xyz
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- cipher: chacha20-ietf-poly1305
+  name: 德国(yudou789.top 玉豆免费节点)
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
+  type: ss
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_44
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_37
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_75
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_39
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_11
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 美国(yudou789.top 玉豆免费节点)_71
-  port: 180
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_5
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_34
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_13
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_44
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: 美国(yudou789.top 玉豆免费节点)_37
@@ -2645,211 +2644,8 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_64
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_35
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0137
-  network: tcp
-  port: 39399
-  reality-opts:
-    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-    short-id: bc8e3658db7d1323
-  server: 155.117.199.13
-  servername: cdnjs.cloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-- alterId: 0
-  cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_15
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
-  server: cnamefuckxxs.yuchen.icu
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- alterId: 0
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_31
-  port: 180
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇺🇸US_18|4.1MB/s
-  password: None
-  port: 5252
-  server: 148.100.84.192
-  type: http
-  username: null
-- grpc-opts:
-    grpc-service-name: hydra.miniproxy.sbs
-  name: 英國_2
-  network: grpc
-  port: 2096
-  server: miniproxy.net
-  servername: hydra.miniproxy.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf
-- name: 美国(yudou789.top 玉豆免费节点)_11
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  skip-cert-verify: false
-  sni: blackshadow.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: blackshadow.dpdns.org
-    path: /195.123.218.174-443
-- cipher: chacha20-ietf-poly1305
-  name: 德国(yudou789.top 玉豆免费节点)
-  password: XUMTygEM1jVYIvysXKqA5T
-  port: 443
-  server: hackney-latest-strike.freesocks.work
-  type: ss
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  type: vless
-  server: 109.169.84.72
-  port: 443
-  uuid: 7f437070-a14e-4355-bfbc-a6036a6bb040
-  servername: strapi.io
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
-    short-id: ff6975658b6cefce
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_1|3.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 35.179.119.76
-  type: ss
-- name: 🇬🇧 英国 | GBR_1
-  type: vless
-  server: 50.7.193.131
-  port: 443
-  uuid: ec537bff-dc14-495c-b65f-65393ad7ee75
-  servername: app5.jarvesitw.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo
-    short-id: 535a3304
-  skip-cert-verify: true
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🇳🇱NL_3|⬇️3.3MB/s
-  network: tcp
-  port: 443
-  server: 94.228.215.12
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
-- name: 🇺🇸 美国 | USA_1
-  type: vless
-  server: 72.56.40.152
-  port: 443
-  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
-  network: ws
-  servername: usa.korgivps.ru
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /api/user
-    headers:
-      Host: usa.korgivps.ru
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-cfb
-  name: 8元老牌专线机场：cczzuu.top
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
-- name: 🇮🇷 伊朗 | IRN
-  type: vless
-  server: 185.143.233.5
-  port: 80
-  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
-  skip-cert-verify: true
-  udp: true
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
-- name: 🇩🇪DE_1|1.1MB/s
-  network: ws
-  port: 2087
-  server: 188.220.67.245
-  tls: false
-  type: vless
-  udp: true
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  ws-opts:
-    path: /8f2690e2d016
-- name: xn--b6gac.eu.org-443-WS-TLS
-  server: xn--b6gac.eu.org
+- name: speed.marisalnc.com-443-WS-TLS
+  server: speed.marisalnc.com
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -2860,87 +2656,6 @@ proxies:
   skip-cert-verify: false
   servername: dl.itworker.cc.cd
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 🇳🇱NL_11|⬇️7.1MB/s
-  network: ws
-  port: 80
-  server: nl-78w-c.southnetworks.cloud
-  servername: nl-78w-c.southnetworks.cloud
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
-  ws-opts:
-    headers:
-      host: nl-78w-c.southnetworks.cloud
-    path: /getWorkerUpdates
-- client-fingerprint: qq
-  name: 🇺🇸US_34|2.3MB/s
-  network: ws
-  port: 443
-  server: cos-cdn-g.alicdn.win
-  servername: mms-statlc-61uzul-e.hzedu.men
-  tls: true
-  type: vless
-  uuid: 2d597e01-d00a-4af0-916f-44195e9b1cac
-  ws-opts:
-    headers:
-      Host: mms-static-origin-e.hzedu.men
-    path: /newlogin/login.do
-- name: 🇩🇪DE_8|⬇️4.8MB/s
-  network: tcp
-  port: 443
-  server: decdn13.suio.me
-  servername: decdn13.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
-- name: 美国_10
-  network: ws
-  port: 443
-  server: cdnjs.com
-  servername: ca-1.rAyAn-rVp.cLoUdNs.cLuB
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f65a4ee-ac15-4451-8b37-72230181c06c
-  ws-opts:
-    headers:
-      host: ca-1.rAyAn-rVp.cLoUdNs.cLuB
-    path: /ws
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇮FI_1|3.1MB/s
-  network: tcp
-  packet-encoding: xudp
-  port: 443
-  reality-opts:
-    public-key: 7sFZz7V1r5qtysLzjw07rOOA2P8NG7kvVX5BxFfc-Xc
-    short-id: db39
-  server: 185.58.207.249
-  servername: yandex.ru
-  tls: true
-  type: vless
-  uuid: e24cf9d3-e936-4a90-9932-33931b6a9b45
-- name: cloudflare.182682.xyz-443-Trojan-WS-TLS
-  server: cloudflare.182682.xyz
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /?ed=2048
@@ -2960,29 +2675,180 @@ proxies:
     headers:
       host: 8qfv4sx0uktvsr6jb9x8wiwwr8vbfidcg4uo.yaroo383mardak.online
     path: /@Arshiacomplus
-- name: 美国(yudou789.top 玉豆免费节点)_2
+- name: cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+  server: cnamefuckxxs.yuchen.icu
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 美國_4
   network: ws
   port: 443
-  server: 195.209.82.149
-  servername: s28233.cdn.ngenix.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a478129-3e7e-Fade-99d7-95e1da14fbdc
-  ws-opts:
-    headers:
-      Host: s28233.cdn.ngenix.net
-    path: /
-- name: 🇸🇪SE_3|⬇️3.2MB/s
-  network: tcp
-  port: 443
-  server: secdn17.suio.me
-  servername: secdn17.suio.me
+  server: join-raiv2mmr-telegram.koyeb.app
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+  ws-opts:
+    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+- name: 美国(yudou789.top 玉豆免费节点)_11
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: false
+  sni: blackshadow.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: blackshadow.dpdns.org
+    path: /195.123.218.174-443
+- name: 🇬🇧 英国 | GBR
+  type: vless
+  server: 109.169.84.72
+  port: 443
+  uuid: 7f437070-a14e-4355-bfbc-a6036a6bb040
+  servername: strapi.io
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
+    short-id: ff6975658b6cefce
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 英国 | GBR_1
+  type: vless
+  server: 50.7.193.131
+  port: 443
+  uuid: ec537bff-dc14-495c-b65f-65393ad7ee75
+  servername: app5.jarvesitw.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo
+    short-id: 535a3304
+  skip-cert-verify: true
+  udp: true
+- grpc-opts:
+    grpc-service-name: hydra.miniproxy.sbs
+  name: 英國_2
+  network: grpc
+  port: 2096
+  server: miniproxy.net
+  servername: hydra.miniproxy.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf
+- flow: xtls-rprx-vision
+  name: 🇳🇱NL_3|⬇️3.3MB/s
+  network: tcp
+  port: 443
+  server: 94.228.215.12
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
+- cipher: aes-256-cfb
+  name: 8元老牌专线机场：cczzuu.top
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- name: 🇳🇱NL_11|⬇️7.1MB/s
+  network: ws
+  port: 80
+  server: nl-78w-c.southnetworks.cloud
+  servername: nl-78w-c.southnetworks.cloud
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
+  ws-opts:
+    headers:
+      host: nl-78w-c.southnetworks.cloud
+    path: /getWorkerUpdates
+- name: 🇮🇷 伊朗 | IRN
+  type: vless
+  server: 185.143.233.5
+  port: 80
+  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+  skip-cert-verify: true
+  udp: true
+- name: xn--b6gac.eu.org-443-WS-TLS
+  server: xn--b6gac.eu.org
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 香港_1
+  network: ws
+  port: 443
+  server: s1.db-link.in
+  servername: dabaihk.webn.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53cddd30-34a1-32dd-b598-c1c4c8a0f813
+  ws-opts:
+    headers:
+      host: dabaihk.webn.cc
+    path: /db1024a105975707
+- cipher: chacha20-ietf-poly1305
+  name: 法国(yudou789.top 玉豆免费节点)
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 美国(yudou789.top 玉豆免费节点)_19
+  password: wwzVn2ZnHfqYa6l8EWh3eY
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
 - name: cfip.1323123.xyz-443-Trojan-WS-TLS
   server: cfip.1323123.xyz
   port: 443
@@ -2998,30 +2864,9 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: 美国_8
-  network: ws
-  port: 443
-  server: www.visa.com.br
-  servername: nl-2.rAyAn-rVp.cLoUdNs.cLuB
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: bed9958c-82a5-4c30-8616-723f7269c0b6
-  ws-opts:
-    headers:
-      host: nl-2.rAyAn-rVp.cLoUdNs.cLuB
-    path: /ws
 - cipher: chacha20-ietf-poly1305
-  name: 美国(yudou789.top 玉豆免费节点)_9
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 美国(yudou789.top 玉豆免费节点)_19
-  password: wwzVn2ZnHfqYa6l8EWh3eY
+  name: 荷兰(yudou789.top 玉豆免费节点)_2
+  password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
@@ -3040,9 +2885,29 @@ proxies:
     short-id: 03653bc03be10c97
   skip-cert-verify: true
   udp: true
+- name: 美国(yudou789.top 玉豆免费节点)_2
+  network: ws
+  port: 443
+  server: 195.209.82.149
+  servername: s28233.cdn.ngenix.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a478129-3e7e-Fade-99d7-95e1da14fbdc
+  ws-opts:
+    headers:
+      Host: s28233.cdn.ngenix.net
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 法国(yudou789.top 玉豆免费节点)
-  password: RFK38Cg7APneSB5cWDcpbm
+  name: 荷兰(yudou789.top 玉豆免费节点)
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 美国(yudou789.top 玉豆免费节点)_9
+  password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
@@ -3054,41 +2919,53 @@ proxies:
   server: switcher-nick-croquet.freesocks.work
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰(yudou789.top 玉豆免费节点)_2
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰(yudou789.top 玉豆免费节点)
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- name: 🇬🇧GB_4|3.1MB/s
-  password: None
-  port: 3118
-  server: 154.61.56.215
-  type: http
-  username: null
-- name: cf.877771.xyz-443-Trojan-WS-TLS
-  server: cf.877771.xyz
-  port: 443
-  type: trojan
-  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  sni: dl.itworker.cc.cd
-  alpn:
-  - h3
-  client-fingerprint: chrome
-  skip-cert-verify: false
+- name: 美国(yudou789.top 玉豆免费节点)_15
   network: ws
+  port: 8880
+  server: wangcai115.cloudflare.182682.xyz
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
   ws-opts:
-    path: /?ed=2048
     headers:
-      Host: dl.itworker.cc.cd
+      Host: frejd.11258.workers.dev
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- name: 美国_8
+  network: ws
+  port: 443
+  server: www.visa.com.br
+  servername: nl-2.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bed9958c-82a5-4c30-8616-723f7269c0b6
+  ws-opts:
+    headers:
+      host: nl-2.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
+- name: 🇸🇪SE_3|⬇️3.2MB/s
+  network: tcp
+  port: 443
+  server: secdn17.suio.me
+  servername: secdn17.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+- alterId: 2
+  cipher: auto
+  name: 香港(yudou789.top 玉豆免费节点)
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: ios
   name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
   network: ws
@@ -3105,6 +2982,32 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 🇭🇰 香港|@stairnode
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: cloudflare.182682.xyz-443-WS-TLS
+  server: cloudflare.182682.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- alterId: 2
+  cipher: auto
   name: 美国(yudou789.top 玉豆免费节点)_74
   port: 30807
   server: v10.hdacd.com
@@ -3115,18 +3018,9 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港|@stairnode
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 香港(yudou789.top 玉豆免费节点)
-  port: 30807
-  server: v10.hdacd.com
+  name: 🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港
+  port: 30809
+  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -3148,9 +3042,9 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港
-  port: 30809
-  server: v9.hdacd.com
+  name: 美国(yudou789.top 玉豆免费节点)_53
+  port: 30804
+  server: v4.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -3169,21 +3063,40 @@ proxies:
     headers:
       Host: sni.skylee4.cloudns.ch
     path: /proxyip=ProxyIP.CMLiussss.net
+- name: https://t.me/zyzzzoao⚡️_3
+  network: tcp
+  password: 63b21d86-a49c-4936-a634-0b5af3e30433
+  port: 443
+  server: tuntro006.instconn.com
+  skip-cert-verify: true
+  sni: torontorm1.686911.xyz
+  type: trojan
+  udp: true
+- name: 🇩🇪DE_6|1.3MB/s
+  password: udp-relay=true
+  port: 11111
+  server: 103.237.102.191
+  type: http
+  username: None
+- name: 未知VLESS-99|free-nodes
+  network: ws
+  port: 2083
+  server: 1.kkcweb.ir
+  servername: hajames.amirconfigpaanelllll.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c805b05e-339d-40e0-8787-432d97a27345
+  ws-opts:
+    headers:
+      host: hajames.amirconfigpaanelllll.com
+    path: /
 - alterId: 2
   cipher: auto
-  name: 英国(yudou789.top 玉豆免费节点)_23
+  name: 美国(yudou789.top 玉豆免费节点)_43
   port: 30836
   server: v36.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_1
-  port: 30809
-  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -3199,8 +3112,87 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: cloudflare-ip.mofashi.ltd-443-WS-TLS
-  server: cloudflare-ip.mofashi.ltd
+- cipher: aes-256-cfb
+  name: 🇺🇸US_1|1.0MB/s
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_13
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: cf.877771.xyz-443-WS-TLS
+  server: cf.877771.xyz
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: cf.0sm.com-443-WS-TLS
+  server: cf.0sm.com
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: 🇩🇪DE_8|⬇️4.8MB/s
+  network: tcp
+  port: 443
+  server: decdn13.suio.me
+  servername: decdn13.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+- alterId: 2
+  cipher: auto
+  name: 美国(yudou789.top 玉豆免费节点)_1
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: cnamefuckxxs.yuchen.icu-443-WS-TLS
+  server: cnamefuckxxs.yuchen.icu
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -3233,102 +3225,6 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- alterId: 2
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_53
-  port: 30804
-  server: v4.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: https://t.me/zyzzzoao⚡️_3
-  network: tcp
-  password: 63b21d86-a49c-4936-a634-0b5af3e30433
-  port: 443
-  server: tuntro006.instconn.com
-  skip-cert-verify: true
-  sni: torontorm1.686911.xyz
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港|@ripaojiedian
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港_1
-  network: ws
-  port: 443
-  server: s1.db-link.in
-  servername: dabaihk.webn.cc
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53cddd30-34a1-32dd-b598-c1c4c8a0f813
-  ws-opts:
-    headers:
-      host: dabaihk.webn.cc
-    path: /db1024a105975707
-- alterId: 2
-  cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_43
-  port: 30836
-  server: v36.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 美国(yudou789.top 玉豆免费节点)_15
-  network: ws
-  port: 8880
-  server: wangcai115.cloudflare.182682.xyz
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-  ws-opts:
-    headers:
-      Host: frejd.11258.workers.dev
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- name: cdn.2020111.xyz-443-WS-TLS
-  server: cdn.2020111.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: 未知VLESS-99|free-nodes
-  network: ws
-  port: 2083
-  server: 1.kkcweb.ir
-  servername: hajames.amirconfigpaanelllll.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c805b05e-339d-40e0-8787-432d97a27345
-  ws-opts:
-    headers:
-      host: hajames.amirconfigpaanelllll.com
-    path: /
 - name: cfip.1323123.xyz-443-WS-TLS
   server: cfip.1323123.xyz
   port: 443
@@ -3346,57 +3242,23 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: cnamefuckxxs.yuchen.icu-443-WS-TLS
-  server: cnamefuckxxs.yuchen.icu
+- name: cloudflare-ip.mofashi.ltd-443-xhttp
+  server: cloudflare-ip.mofashi.ltd
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
   tls: true
   alpn:
-  - h3
+  - h3%2Ch2
   tfo: false
   skip-cert-verify: false
   servername: dl.itworker.cc.cd
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cloudflare.182682.xyz-443-WS-TLS
-  server: cloudflare.182682.xyz
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
-- name: cf.0sm.com-443-WS-TLS
-  server: cf.0sm.com
-  port: 443
-  type: vless
-  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: dl.itworker.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dl.itworker.cc.cd
+  network: xhttp
+  xhttp-opts:
+    path: /9898ffe4
+    host: dl.itworker.cc.cd
+    mode: stream-one
 - name: cf.090227.xyz-443-WS-TLS
   server: cf.090227.xyz
   port: 443
@@ -3414,8 +3276,23 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dl.itworker.cc.cd
-- name: cf.877771.xyz-443-WS-TLS
-  server: cf.877771.xyz
+- name: cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  type: trojan
+  password: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  sni: dl.itworker.cc.cd
+  alpn:
+  - h3
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
+- name: cdn.2020111.xyz-443-WS-TLS
+  server: cdn.2020111.xyz
   port: 443
   type: vless
   uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
@@ -3446,6 +3323,23 @@ proxies:
       Host: ru05.abvpn.ru
   skip-cert-verify: true
   udp: true
+- name: cloudflare-ip.mofashi.ltd-443-WS-TLS
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  type: vless
+  uuid: 9898ffe4-1e2d-428e-8ec6-59b3dcc76581
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: dl.itworker.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dl.itworker.cc.cd
 - alterId: 2
   cipher: auto
   name: 美国(yudou789.top 玉豆免费节点)_83
@@ -3458,296 +3352,283 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 美国(yudou789.top 玉豆免费节点)_13
-  port: 30829
-  server: v29.hdacd.com
+  name: 英国(yudou789.top 玉豆免费节点)_23
+  port: 30836
+  server: v36.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇧🇷BR_1|1.9MB/s
-  port: 2158
-  server: 177.11.49.122
-  type: http
 proxy-groups:
 - name: 🚀 节点选择
   type: url-test
   proxies:
-  - 联通-LAX-443-WS-TLS-01
-  - 🇭🇰 移动-HKG-443-xhttp-04
-  - 🇫🇷FR_1|⬇️4.3MB/s
-  - 未知VLESS-126|free-nodes
-  - speed.marisalnc.com-443-Trojan-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_71
+  - 美国(yudou789.top 玉豆免费节点)_19
+  - 🇫🇷FR_8|⬇️5.1MB/s
   - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-03
-  - 英国(yudou789.top 玉豆免费节点)_6
-  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-02
-  - 🇮🇹IT_1|⬇️2.9MB/s
-  - 美国(yudou789.top 玉豆免费节点)_31
-  - 英国(yudou789.top 玉豆免费节点)_10
-  - 美国(yudou789.top 玉豆免费节点)_34
-  - 🇭🇰 香港 | HKG
-  - 电信-LAX-443-xhttp-03
-  - 未知VLESS-53|free-nodes
-  - 英国(yudou789.top 玉豆免费节点)_56
-  - 荷兰(yudou789.top 玉豆免费节点)_2
-  - 🇭🇰 移动-HKG-443-WS-TLS-03
-  - 🇫🇷 电信-FRA-443-Trojan-WS-TLS-02
-  - 联通-LAX-443-WS-TLS-02
-  - 美國_4
-  - 美国(yudou789.top 玉豆免费节点)_21
-  - 🇯🇵 日本 | JPN_1
-  - 英国(yudou789.top 玉豆免费节点)_25
-  - cdn.2020111.xyz-443-Trojan-WS-TLS
-  - 🇩🇪DE_13|⬇️5.6MB/s
-  - 英国(yudou789.top 玉豆免费节点)_35
-  - 联通-LAX-443-xhttp-02
-  - 德国(yudou789.top 玉豆免费节点)_7
-  - 英国(yudou789.top 玉豆免费节点)_17
-  - 🇩🇪DE_6|⬇️4.3MB/s
-  - 🇬🇧 英国 | GBR
-  - 联通-LAX-443-xhttp-01
-  - 美国(yudou789.top 玉豆免费节点)_14
-  - 🇮🇷 伊朗 | IRN
-  - cloudflare.182682.xyz-443-WS-TLS
-  - 联通-LAX-443-WS-TLS-05
-  - 英国(yudou789.top 玉豆免费节点)_13
-  - cloudflare.182682.xyz-443-Trojan-WS-TLS
   - 联通-LAX-443-Trojan-WS-TLS-01
-  - 美国(yudou789.top 玉豆免费节点)_18
-  - 英国(yudou789.top 玉豆免费节点)_48
-  - 荷兰(yudou789.top 玉豆免费节点)_1
-  - 英國_2
-  - GBVLESS-110|free-nodes
-  - 美国(yudou789.top 玉豆免费节点)_44
-  - 电信-LAX-443-WS-TLS-03
-  - 英国(yudou789.top 玉豆免费节点)_14
-  - cfip.1323123.xyz-443-Trojan-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_9
-  - https://t.me/zyzzzoao⚡️_3
+  - 英国(yudou789.top 玉豆免费节点)_50
+  - cfip.1323123.xyz-443-WS-TLS
+  - 联通-LAX-443-xhttp-04
+  - 美国(yudou789.top 玉豆免费节点)_4
+  - 美国(yudou789.top 玉豆免费节点)_71
+  - 🇬🇧 英国 | GBR
+  - 德国(yudou789.top 玉豆免费节点)_2
+  - 美国(yudou789.top 玉豆免费节点)_25
+  - 美国(yudou789.top 玉豆免费节点)_28
+  - xn--b6gac.eu.org-443-Trojan-WS-TLS
+  - 🇩🇪DE_13|⬇️5.6MB/s
+  - 德国(yudou789.top 玉豆免费节点)_1
+  - 美国(yudou789.top 玉豆免费节点)_39
+  - 🇫🇷FR_7|⬇️3.3MB/s
+  - 美国(yudou789.top 玉豆免费节点)_8
+  - 联通-LAX-443-WS-TLS-02
+  - 美国(yudou789.top 玉豆免费节点)_48
+  - 英国(yudou789.top 玉豆免费节点)_15
+  - 🇭🇰 香港|@ripaojiedian
+  - 未知VLESS-65|free-nodes
+  - cf.0sm.com-443-xhttp
+  - 🇺🇸US_1|1.0MB/s
+  - 🇺🇸_US_美国_1
+  - 德国(yudou789.top 玉豆免费节点)_8
+  - 英国(yudou789.top 玉豆免费节点)_55
+  - 英国(yudou789.top 玉豆免费节点)_22
+  - 电信-LAX-443-WS-TLS-01
+  - 英国(yudou789.top 玉豆免费节点)_6
+  - 🇷🇺 俄罗斯 | RUS_1
+  - 英国(yudou789.top 玉豆免费节点)_29
+  - 美国(yudou789.top 玉豆免费节点)_64
+  - 德国(yudou789.top 玉豆免费节点)_7
+  - 美国(yudou789.top 玉豆免费节点)_20
+  - 🇮🇹IT_1|⬇️2.9MB/s
+  - FRVLESS-75|free-nodes
+  - cnamefuckxxs.yuchen.icu-443-WS-TLS
+  - 英国(yudou789.top 玉豆免费节点)_5
+  - 美国(yudou789.top 玉豆免费节点)_34
+  - 英国(yudou789.top 玉豆免费节点)_24
+  - 美国(yudou789.top 玉豆免费节点)_31
+  - 🇦🇹_AT_奥地利
   - 美国(yudou789.top 玉豆免费节点)_61
-  - 美国(yudou789.top 玉豆免费节点)_72
+  - 美国(yudou789.top 玉豆免费节点)_45
+  - speed.marisalnc.com-443-xhttp
+  - 德国(yudou789.top 玉豆免费节点)_3
+  - 荷兰(yudou789.top 玉豆免费节点)_1
+  - 美国(yudou789.top 玉豆免费节点)_13
+  - 🇩🇪DE_8|⬇️4.8MB/s
+  - 🇳🇱NL_11|⬇️7.1MB/s
+  - 法国(yudou789.top 玉豆免费节点)
+  - cdn.tzpro.xyz-443-WS-TLS
+  - cfip.1323123.xyz-443-xhttp
+  - 未知VLESS-72|free-nodes
+  - 联通-LAX-443-Trojan-WS-TLS-02
+  - 美国(yudou789.top 玉豆免费节点)_12
+  - 未知VLESS-119|free-nodes
+  - 德国(yudou789.top 玉豆免费节点)_6
+  - 英国(yudou789.top 玉豆免费节点)_46
+  - 🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港
+  - 新加坡(yudou789.top 玉豆免费节点)
+  - 联通-LAX-443-Trojan-WS-TLS-05
+  - cfip.1323123.xyz-443-Trojan-WS-TLS
+  - cf.0sm.com-443-WS-TLS
+  - 美國_4
+  - 电信-LAX-443-WS-TLS-04
+  - 英国(yudou789.top 玉豆免费节点)_12
+  - 联通-LAX-443-WS-TLS-03
+  - 美国(yudou789.top 玉豆免费节点)_1
+  - cfip.cfcdn.vip-443-Trojan-WS-TLS
+  - 联通-LAX-443-WS-TLS-05
+  - 🇸🇪SE_3|⬇️3.2MB/s
+  - 英国(yudou789.top 玉豆免费节点)_14
+  - 美国(yudou789.top 玉豆免费节点)_78
+  - xn--b6gac.eu.org-443-WS-TLS
+  - 英国(yudou789.top 玉豆免费节点)_23
+  - 🇺🇸_US_美国_3
+  - 🇭🇰 移动-HKG-443-xhttp-04
+  - 美国(yudou789.top 玉豆免费节点)_79
+  - 美国(yudou789.top 玉豆免费节点)_32
+  - 🇭🇰 移动-HKG-443-xhttp-02
+  - 🇫🇷FR_6|⬇️1.2MB/s
+  - 美国(yudou789.top 玉豆免费节点)_49
+  - 德国(yudou789.top 玉豆免费节点)_10
+  - 🇭🇰 移动-HKG-443-WS-TLS-05
   - cdn.tzpro.xyz-443-Trojan-WS-TLS
   - 英国(yudou789.top 玉豆免费节点)_49
-  - 美国(yudou789.top 玉豆免费节点)_77
-  - 美国(yudou789.top 玉豆免费节点)_15
-  - 美国(yudou789.top 玉豆免费节点)_41
-  - 电信-LAX-443-Trojan-WS-TLS-02
-  - 英国(yudou789.top 玉豆免费节点)_12
-  - 英国(yudou789.top 玉豆免费节点)_33
-  - cf.877771.xyz-443-Trojan-WS-TLS
-  - cdn.tzpro.xyz-443-WS-TLS
-  - 德国(yudou789.top 玉豆免费节点)_11
-  - 🇬🇧GB_2|⬇️1.7MB/s
   - 🇭🇰 移动-HKG-443-xhttp-01
-  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-01
-  - 美国(yudou789.top 玉豆免费节点)_23
-  - 🇭🇰 移动-HKG-443-WS-TLS-01
-  - 未知VLESS-65|free-nodes
-  - FRVLESS-75|free-nodes
-  - 美国(yudou789.top 玉豆免费节点)_79
-  - 美国(yudou789.top 玉豆免费节点)_39
-  - 英国(yudou789.top 玉豆免费节点)
-  - 新加坡(yudou789.top 玉豆免费节点)
-  - 英国(yudou789.top 玉豆免费节点)_51
-  - cloudflare-ip.mofashi.ltd-443-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_12
-  - US_speednode_0142
-  - 英国(yudou789.top 玉豆免费节点)_46
-  - 德国(yudou789.top 玉豆免费节点)_6
-  - 法国(yudou789.top 玉豆免费节点)_1
-  - 英国(yudou789.top 玉豆免费节点)_55
-  - 联通-LAX-443-WS-TLS-03
-  - 🇦🇹_AT_奥地利
-  - 美国(yudou789.top 玉豆免费节点)_28
-  - 🇭🇰 香港|@ripaojiedian
-  - 荷兰(yudou789.top 玉豆免费节点)
-  - cf.0sm.com-443-Trojan-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_26
-  - 美国(yudou789.top 玉豆免费节点)_49
-  - 未知VLESS-119|free-nodes
-  - cfip.cfcdn.vip-443-WS-TLS
-  - 英国(yudou789.top 玉豆免费节点)_53
-  - 电信-LAX-443-WS-TLS-01
-  - 未知VLESS-72|free-nodes
-  - https://t.me/zyzzzoao⚡️_1
-  - 🇫🇷 电信-FRA-443-WS-TLS-02
-  - 英国(yudou789.top 玉豆免费节点)_38
-  - 🇬🇧 英国 | GBR_1
-  - 英国(yudou789.top 玉豆免费节点)_23
-  - 🇭🇰 移动-HKG-443-WS-TLS-02
-  - 美国(yudou789.top 玉豆免费节点)_47
-  - 美国(yudou789.top 玉豆免费节点)_68
-  - 美国(yudou789.top 玉豆免费节点)_45
-  - 英国(yudou789.top 玉豆免费节点)_22
-  - 美国(yudou789.top 玉豆免费节点)_78
-  - 德国(yudou789.top 玉豆免费节点)_4
-  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-04
-  - 美国(yudou789.top 玉豆免费节点)_80
-  - 美国(yudou789.top 玉豆免费节点)_53
-  - xn--b6gac.eu.org-443-WS-TLS
-  - cf.090227.xyz-443-xhttp
-  - xn--b6gac.eu.org-443-Trojan-WS-TLS
-  - US_speednode_0136
-  - 🇺🇸_US_美国_3
-  - speed.marisalnc.com-443-WS-TLS
-  - 未知VLESS-99|free-nodes
-  - 美国(yudou789.top 玉豆免费节点)_20
-  - 英国(yudou789.top 玉豆免费节点)_11
-  - US_speednode_0137
-  - 🇺🇸_US_美国_1
-  - 'tg频道:@ripaojiedian #1'
-  - 德国(yudou789.top 玉豆免费节点)_9
-  - 法国(yudou789.top 玉豆免费节点)_2
-  - cloudflare.182682.xyz-443-xhttp
-  - 美国_2
-  - 🇭🇰 移动-HKG-443-xhttp-03
-  - 联通-LAX-443-Trojan-WS-TLS-05
-  - 美国(yudou789.top 玉豆免费节点)_75
-  - 香港(yudou789.top 玉豆免费节点)
-  - 美国(yudou789.top 玉豆免费节点)_25
-  - 🇫🇷FR_6|⬇️1.2MB/s
-  - 英国(yudou789.top 玉豆免费节点)_3
-  - cdn.tzpro.xyz-443-xhttp
-  - 美国(yudou789.top 玉豆免费节点)_70
-  - 🇫🇷FR_3|⬇️6.2MB/s
-  - 🇩🇪DE_8|⬇️4.8MB/s
-  - 美国(yudou789.top 玉豆免费节点)_59
-  - 英国(yudou789.top 玉豆免费节点)_40
-  - 🇸🇬SG_4|⬇️5.1MB/s
-  - 🇫🇮FI_1|3.1MB/s
-  - xn--b6gac.eu.org-443-xhttp
-  - 美国(yudou789.top 玉豆免费节点)_46
-  - 美国(yudou789.top 玉豆免费节点)_69
-  - 德国(yudou789.top 玉豆免费节点)_8
-  - cf.090227.xyz-443-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_55
-  - 美国(yudou789.top 玉豆免费节点)_74
-  - 🇭🇰 移动-HKG-443-WS-TLS-04
-  - 电信-LAX-443-Trojan-WS-TLS-03
-  - cfip.1323123.xyz-443-xhttp
-  - 英国(yudou789.top 玉豆免费节点)_5
-  - 🇺🇸US_7|1.4MB/s
-  - GBVLESS-84|free-nodes
-  - 联通-LAX-443-WS-TLS-04
-  - 美国(yudou789.top 玉豆免费节点)_8
-  - 英国(yudou789.top 玉豆免费节点)_37
-  - 🇷🇺 俄罗斯 | RUS_1
-  - 🇫🇷FR_8|⬇️5.1MB/s
-  - 英国(yudou789.top 玉豆免费节点)_54
-  - 美国(yudou789.top 玉豆免费节点)_43
-  - 🇺🇸_US_美国_2
-  - 美国(yudou789.top 玉豆免费节点)_4
-  - 英国(yudou789.top 玉豆免费节点)_24
-  - 🇳🇱NL_3|⬇️3.3MB/s
-  - cf.0sm.com-443-xhttp
-  - 🇧🇷BR_1|1.9MB/s
-  - 🇭🇰 移动-HKG-443-xhttp-05
-  - 德国(yudou789.top 玉豆免费节点)_10
-  - 美国(yudou789.top 玉豆免费节点)_29
-  - 联通-LAX-443-xhttp-03
-  - 美国_10
-  - 🇺🇸US_28|⬇️3.5MB/s
-  - 🇫🇷 电信-FRA-443-xhttp-02
-  - 🇮🇹IT_2|⬇️4.9MB/s
-  - 🇫🇷 电信-FRA-443-WS-TLS-01
-  - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
-  - 法国(yudou789.top 玉豆免费节点)
-  - 电信-LAX-443-WS-TLS-02
-  - 英国(yudou789.top 玉豆免费节点)_15
-  - 8元老牌专线机场：cczzuu.top
-  - 🇳🇱NL_11|⬇️7.1MB/s
-  - cf.877771.xyz-443-xhttp
-  - 美国(yudou789.top 玉豆免费节点)_64
-  - 🇺🇸US_34|2.3MB/s
-  - 美国(yudou789.top 玉豆免费节点)_13
-  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-05
-  - 英国(yudou789.top 玉豆免费节点)_36
-  - 美国(yudou789.top 玉豆免费节点)_22
-  - 🇫🇷FR_7|⬇️3.3MB/s
-  - 🇬🇧GB_1|3.7MB/s
-  - 美国(yudou789.top 玉豆免费节点)_1
-  - 🇸🇪SE_3|⬇️3.2MB/s
-  - 🇮🇹IT_3|⬇️3.7MB/s
-  - cfip.cfcdn.vip-443-Trojan-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_67
-  - 英国(yudou789.top 玉豆免费节点)_1
-  - 英国(yudou789.top 玉豆免费节点)_27
-  - 英国(yudou789.top 玉豆免费节点)_41
-  - 电信-LAX-443-xhttp-01
-  - 美国_8
-  - 英国(yudou789.top 玉豆免费节点)_34
-  - 美国(yudou789.top 玉豆免费节点)_76
-  - 英国(yudou789.top 玉豆免费节点)_47
   - 德国(yudou789.top 玉豆免费节点)
-  - 德国(yudou789.top 玉豆免费节点)_2
-  - 美国(yudou789.top 玉豆免费节点)_58
-  - 电信-LAX-443-Trojan-WS-TLS-01
-  - cdn.2020111.xyz-443-xhttp
-  - 美国(yudou789.top 玉豆免费节点)_32
-  - 德国(yudou789.top 玉豆免费节点)_5
-  - 美国(yudou789.top 玉豆免费节点)_48
-  - 🇺🇸_US_美国
-  - 联通-LAX-443-xhttp-04
-  - 英国(yudou789.top 玉豆免费节点)_26
-  - 美国_5
-  - 🇺🇸_US_美国_5
-  - 🇺🇸 美国 | USA_1
-  - cdn.2020111.xyz-443-WS-TLS
-  - 英国(yudou789.top 玉豆免费节点)_16
-  - 🇭🇰 移动-HKG-443-WS-TLS-05
-  - 🇫🇷 电信-FRA-443-Trojan-WS-TLS-01
-  - cf.877771.xyz-443-WS-TLS
-  - cfip.1323123.xyz-443-WS-TLS
-  - 美国(yudou789.top 玉豆免费节点)_11
-  - 🇭🇰 移动-HKG-443-xhttp-02
-  - 联通-LAX-443-Trojan-WS-TLS-04
-  - 美国(yudou789.top 玉豆免费节点)_50
-  - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
-  - https://t.me/zyzzzoao⚡️_2
-  - cf.090227.xyz-443-Trojan-WS-TLS
-  - 德国(yudou789.top 玉豆免费节点)_1
-  - 英国(yudou789.top 玉豆免费节点)_52
-  - 英国(yudou789.top 玉豆免费节点)_29
-  - 德国(yudou789.top 玉豆免费节点)_3
-  - cnamefuckxxs.yuchen.icu-443-xhttp
+  - cdn.2020111.xyz-443-Trojan-WS-TLS
+  - 🇭🇰 移动-HKG-443-WS-TLS-03
+  - cfip.cfcdn.vip-443-xhttp
+  - 美国(yudou789.top 玉豆免费节点)_74
+  - 美国(yudou789.top 玉豆免费节点)_76
   - 美国(yudou789.top 玉豆免费节点)_52
+  - cdn.2020111.xyz-443-WS-TLS
+  - 德国(yudou789.top 玉豆免费节点)_9
+  - 美国(yudou789.top 玉豆免费节点)_68
+  - 联通-LAX-443-xhttp-01
+  - xn--b6gac.eu.org-443-xhttp
+  - 英国(yudou789.top 玉豆免费节点)_17
+  - 电信-LAX-443-Trojan-WS-TLS-02
+  - 德国(yudou789.top 玉豆免费节点)_11
+  - 美国_2
+  - 英国(yudou789.top 玉豆免费节点)_1
+  - 🇭🇰 香港 | HKG
+  - 未知VLESS-99|free-nodes
+  - 英国(yudou789.top 玉豆免费节点)_56
+  - 英国(yudou789.top 玉豆免费节点)_40
+  - GBVLESS-84|free-nodes
+  - US_speednode_0142
+  - 🇺🇸_US_美国
+  - 🇭🇰 移动-HKG-443-WS-TLS-02
+  - 美国(yudou789.top 玉豆免费节点)_63
+  - 🇩🇪DE_6|1.3MB/s
+  - 'tg频道:@ripaojiedian #1'
+  - 英国(yudou789.top 玉豆免费节点)_36
+  - 🇭🇰 移动-HKG-443-xhttp-03
+  - cloudflare.182682.xyz-443-Trojan-WS-TLS
+  - 美国(yudou789.top 玉豆免费节点)_77
+  - 美国(yudou789.top 玉豆免费节点)_46
+  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-04
+  - 英国(yudou789.top 玉豆免费节点)_48
+  - 🇮🇷 伊朗 | IRN
+  - 英国(yudou789.top 玉豆免费节点)
+  - 英国(yudou789.top 玉豆免费节点)_39
+  - 🇭🇰 移动-HKG-443-WS-TLS-01
+  - 🇯🇵 日本 | JPN_1
+  - 8元老牌专线机场：cczzuu.top
+  - 英国(yudou789.top 玉豆免费节点)_38
+  - cf.877771.xyz-443-xhttp
+  - 美国(yudou789.top 玉豆免费节点)_53
+  - cloudflare-ip.mofashi.ltd-443-WS-TLS
+  - 英国(yudou789.top 玉豆免费节点)_33
+  - 电信-LAX-443-xhttp-02
+  - 美国(yudou789.top 玉豆免费节点)_59
+  - 联通-LAX-443-xhttp-03
+  - 美国(yudou789.top 玉豆免费节点)_41
+  - 🇭🇰 移动-HKG-443-xhttp-05
+  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-01
+  - cf.090227.xyz-443-WS-TLS
+  - 未知VLESS-126|free-nodes
+  - 美国(yudou789.top 玉豆免费节点)_55
+  - 美国_10
+  - 英国(yudou789.top 玉豆免费节点)_16
+  - 美国(yudou789.top 玉豆免费节点)_81
+  - 美国(yudou789.top 玉豆免费节点)_70
+  - https://t.me/zyzzzoao⚡️_1
+  - 美国(yudou789.top 玉豆免费节点)_22
+  - 电信-LAX-443-xhttp-04
+  - 美国(yudou789.top 玉豆免费节点)_50
+  - 美国(yudou789.top 玉豆免费节点)_80
+  - 英国(yudou789.top 玉豆免费节点)_52
+  - 美国(yudou789.top 玉豆免费节点)_37
+  - 美国(yudou789.top 玉豆免费节点)_9
+  - 英国(yudou789.top 玉豆免费节点)_2
+  - 英国(yudou789.top 玉豆免费节点)_25
+  - 电信-LAX-443-xhttp-03
+  - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+  - cf.0sm.com-443-Trojan-WS-TLS
+  - 英国(yudou789.top 玉豆免费节点)_37
+  - 美国(yudou789.top 玉豆免费节点)_3
+  - 美国(yudou789.top 玉豆免费节点)_23
+  - cf.090227.xyz-443-xhttp
+  - 🇸🇬SG_4|⬇️5.1MB/s
+  - cloudflare.182682.xyz-443-WS-TLS
+  - 🇬🇧GB_2|⬇️1.7MB/s
+  - 美国(yudou789.top 玉豆免费节点)_21
+  - 🇩🇪DE_6|⬇️4.3MB/s
+  - 英国(yudou789.top 玉豆免费节点)_41
+  - speed.marisalnc.com-443-WS-TLS
+  - 联通-LAX-443-xhttp-02
+  - 美国(yudou789.top 玉豆免费节点)_14
+  - 美国(yudou789.top 玉豆免费节点)_44
+  - 英国(yudou789.top 玉豆免费节点)_54
+  - 英国(yudou789.top 玉豆免费节点)_34
+  - 🇺🇸US_28|⬇️3.5MB/s
+  - 英国(yudou789.top 玉豆免费节点)_27
+  - 美国(yudou789.top 玉豆免费节点)_43
+  - 电信-LAX-443-WS-TLS-02
+  - 🇳🇱NL_3|⬇️3.3MB/s
+  - 🇬🇧 英国 | GBR_1
   - 美国(yudou789.top 玉豆免费节点)_83
+  - 荷兰(yudou789.top 玉豆免费节点)_2
+  - cf.877771.xyz-443-WS-TLS
+  - 美国(yudou789.top 玉豆免费节点)_5
+  - 美国(yudou789.top 玉豆免费节点)_75
+  - 法国(yudou789.top 玉豆免费节点)_1
+  - 法国(yudou789.top 玉豆免费节点)_2
+  - cf.877771.xyz-443-Trojan-WS-TLS
+  - 🇫🇷FR_1|⬇️4.3MB/s
+  - US_speednode_0136
+  - 美国(yudou789.top 玉豆免费节点)_58
+  - 英国(yudou789.top 玉豆免费节点)_44
+  - 🇫🇷FR_3|⬇️6.2MB/s
+  - 美国(yudou789.top 玉豆免费节点)_67
+  - 电信-LAX-443-Trojan-WS-TLS-03
+  - 德国(yudou789.top 玉豆免费节点)_5
+  - cf.090227.xyz-443-Trojan-WS-TLS
+  - https://t.me/zyzzzoao⚡️_3
+  - cdn.2020111.xyz-443-xhttp
+  - cloudflare-ip.mofashi.ltd-443-xhttp
+  - 英国(yudou789.top 玉豆免费节点)_51
+  - 电信-LAX-443-WS-TLS-03
+  - 🇺🇸_US_美国_2
+  - 英国(yudou789.top 玉豆免费节点)_13
+  - 美国_5
+  - 德国(yudou789.top 玉豆免费节点)_4
+  - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+  - https://t.me/zyzzzoao⚡️_2
+  - 🇭🇰 移动-HKG-443-WS-TLS-04
+  - US_speednode_0137
+  - 美国(yudou789.top 玉豆免费节点)_69
+  - 联通-LAX-443-Trojan-WS-TLS-04
+  - 🇺🇸_US_美国_5
+  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-02
+  - 未知VLESS-53|free-nodes
+  - 🇺🇸_US_美国_4
+  - 香港(yudou789.top 玉豆免费节点)
+  - 电信-LAX-443-Trojan-WS-TLS-01
+  - 英國_2
+  - 英国(yudou789.top 玉豆免费节点)_47
+  - 英国(yudou789.top 玉豆免费节点)_11
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  - 美国_8
+  - 英国(yudou789.top 玉豆免费节点)_26
+  - 英国(yudou789.top 玉豆免费节点)_3
+  - 电信-LAX-443-Trojan-WS-TLS-04
+  - 🇮🇹IT_2|⬇️4.9MB/s
+  - 🇭🇰 香港|@stairnode
+  - 英国(yudou789.top 玉豆免费节点)_53
+  - 美国(yudou789.top 玉豆免费节点)_18
+  - 美国(yudou789.top 玉豆免费节点)_47
+  - 🇭🇰 移动-HKG-443-Trojan-WS-TLS-05
+  - 联通-LAX-443-xhttp-05
+  - speed.marisalnc.com-443-Trojan-WS-TLS
+  - cloudflare.182682.xyz-443-xhttp
+  - cfip.cfcdn.vip-443-WS-TLS
   - 美国_9
+  - cdn.tzpro.xyz-443-xhttp
+  - 电信-LAX-443-xhttp-01
+  - 英国(yudou789.top 玉豆免费节点)_35
+  - 英国(yudou789.top 玉豆免费节点)_10
+  - cnamefuckxxs.yuchen.icu-443-xhttp
+  - 联通-LAX-443-WS-TLS-04
+  - 荷兰(yudou789.top 玉豆免费节点)
+  - 美国(yudou789.top 玉豆免费节点)_65
+  - 美国(yudou789.top 玉豆免费节点)_16
+  - 美国(yudou789.top 玉豆免费节点)
+  - 美国(yudou789.top 玉豆免费节点)_11
+  - 联通-LAX-443-WS-TLS-01
+  - 🇮🇹IT_3|⬇️3.7MB/s
+  - 联通-LAX-443-Trojan-WS-TLS-03
+  - 香港_1
+  - GBVLESS-110|free-nodes
+  - 美国(yudou789.top 玉豆免费节点)_15
   - 英国(yudou789.top 玉豆免费节点)_31
   - 英国(yudou789.top 玉豆免费节点)_9
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - 🇫🇷 电信-FRA-443-xhttp-01
-  - 🇩🇪DE_1|1.1MB/s
-  - 美国(yudou789.top 玉豆免费节点)_16
-  - 英国(yudou789.top 玉豆免费节点)_50
-  - 🇭🇰 香港|@stairnode
-  - cnamefuckxxs.yuchen.icu-443-WS-TLS
-  - 联通-LAX-443-Trojan-WS-TLS-02
-  - 香港_1
-  - 英国(yudou789.top 玉豆免费节点)_2
-  - 🇬🇧GB_4|3.1MB/s
-  - 🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港
-  - speed.marisalnc.com-443-xhttp
-  - cf.0sm.com-443-WS-TLS
-  - 联通-LAX-443-Trojan-WS-TLS-03
-  - cloudflare-ip.mofashi.ltd-443-xhttp
-  - 英国(yudou789.top 玉豆免费节点)_44
-  - 联通-LAX-443-xhttp-05
-  - 美国(yudou789.top 玉豆免费节点)
-  - 美国(yudou789.top 玉豆免费节点)_3
-  - 美国(yudou789.top 玉豆免费节点)_19
+  - 美国(yudou789.top 玉豆免费节点)_29
+  - 美国(yudou789.top 玉豆免费节点)_26
+  - 美国(yudou789.top 玉豆免费节点)_72
   - 美国(yudou789.top 玉豆免费节点)_2
-  - 美国(yudou789.top 玉豆免费节点)_5
-  - 美国(yudou789.top 玉豆免费节点)_37
-  - 🇺🇸_US_美国_4
-  - 电信-LAX-443-xhttp-02
-  - 美国(yudou789.top 玉豆免费节点)_63
-  - 美国(yudou789.top 玉豆免费节点)_81
-  - 🇺🇸US_18|4.1MB/s
-  - 美国(yudou789.top 玉豆免费节点)_65
-  - 英国(yudou789.top 玉豆免费节点)_39
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -3758,7 +3639,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
   url: http://www.gstatic.com/generate_204
@@ -3771,7 +3651,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
 - name: 📲 电报信息
@@ -3781,7 +3660,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
 - name: Ⓜ️ 微软服务
@@ -3791,7 +3669,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
 - name: 🍎 苹果服务
@@ -3801,7 +3678,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
 - name: 🎯 全球直连
@@ -3825,7 +3701,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR_1
   - 🇷🇺 俄罗斯 | RUS_1
-  - 🇺🇸 美国 | USA_1
   - 🇭🇰 香港 | HKG
   - 🇮🇷 伊朗 | IRN
 rule-providers:
